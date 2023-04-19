@@ -2,7 +2,7 @@ const newrow = document.getElementById("newrow")
 
 // console.log("hello");
 let arr = []
-axios.get("http://localhost:8080/get-all")
+axios.get("http://13.233.83.244:8080/get-all")
 .then((res) => {
     arr = res.data
     calling()

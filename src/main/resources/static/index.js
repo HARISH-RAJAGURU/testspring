@@ -13,7 +13,7 @@ form.addEventListener("submit",(e)=>{
             email : email
         }
 
-        axios.post("http://localhost:8080/post-data",data)
+        axios.post("http://13.233.83.244:8080/post-data",data)
         .then((res) =>console.log(res.data))
         .catch((err)=>console.log(err))
     }
