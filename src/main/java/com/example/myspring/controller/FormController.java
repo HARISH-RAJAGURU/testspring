@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+// import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.myspring.Entity.Forms;
@@ -27,4 +28,9 @@ public class FormController {
     public Forms postForm(@RequestBody Forms forms){
         return formrepo.save(forms);
     }
+
+    // @GetMapping("/del-forms/:id")
+    // public String delete(@RequestParam Integer id){
+    //     return "Deleted successfully";
+    // }
 }

@@ -8,7 +8,7 @@ public class HtmlController {
 
     @GetMapping("/")
     public String index(){
-        return "Index";
+        return "index";
     }
 
     @GetMapping("/show")
